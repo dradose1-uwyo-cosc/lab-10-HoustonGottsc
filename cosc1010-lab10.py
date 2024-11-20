@@ -43,3 +43,14 @@ def get_hash(to_hash):
 # Hash each individual password and compare it against the stored hash.
 # - When you find the match, print the plaintext version of the password.
 # - End your loop.
+
+from pathlib import Path
+
+path = Path('rockyou.txt')
+contents = path.read_text()
+
+hashedpasswords = {}
+
+try:
+    get.hash(Path)
+    
