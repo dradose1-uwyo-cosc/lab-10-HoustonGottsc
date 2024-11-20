@@ -44,13 +44,17 @@ def get_hash(to_hash):
 # - When you find the match, print the plaintext version of the password.
 # - End your loop.
 
-from pathlib import Path
-
 path = Path('rockyou.txt')
 contents = path.read_text()
 
 hashedpasswords = {}
+def get_hash(to_hash):
+    hashed(to_hash.encode('utf-8')).hexdigest().upper()
+for value in contents:
+    if value not in hashedpasswords:
+        hashedpasswords[hashed] == value
 
-try:
-    get.hash(Path)
-    
+
+
+print(hashedpasswords)
+
